@@ -3,7 +3,7 @@
 
 ### Domain 
       
-      -Android Development
+      -App Development
 ### Tech Stack 
 
       -Flutter:
@@ -90,7 +90,7 @@ This is the Family Gallery in which the patient can store the pictures and names
 
 
 
-![obli](https://user-images.githubusercontent.com/91636803/148442581-3ad3b958-7f30-4c99-b391-3b0004f2e15c.png)
+
 
 
 
@@ -109,33 +109,38 @@ https://user-images.githubusercontent.com/91636803/148514454-ad33acf1-25a9-41e1-
 
 
 ### How to run :
-**_1) Clone the repository._**
 
-        -git clone: https://github.com/clary09/Obliviate.git
+**_1) Make sure Flutter is installed in your Device._**[Help]( https://docs.flutter.dev/get-started/install)
 
-**_2) Open in Android studio using git version control._**
+**_2) Set-up your IDE. Prefer Android Studio._**[Help](https://developer.android.com/studio)
 
-**_3) Pub get the pubspec.yaml file._**
+**_3) Clone the repository._**
+
+        -git clone https://github.com/shamvi-05/Obliviate.git
+
+**_4) Open in Android studio using git version control._**
+
+**_5) Pub get the pubspec.yaml file._**
           
           -Run command in your terminal: pub get
-**_4) Run the file in your emulator._**
+**_6) Run the file in your emulator._**
 
 
 
 
 
 
-## [ Demonstration Link ](https://youtu.be/zKJ_SAC2948)
+## [ App-Demonstration Link ](https://youtu.be/zKJ_SAC2948)
 
 
 
-### Duck Debuggers 🐤
-**AIN FATIMA          -  IMH/10020/20**
+### Team-Duck Debuggers 🐤
+ [**AIN FATIMA**](https://github.com/clary09)
 
-**RIYA SINGH          -  IMH/10026/20**
+[**RIYA SINGH**](https://github.com/Riy-a)
 
-**SHAMBHAVI SINGH     -  IMH/10022/20**
+[**SHAMBHAVI SINGH**](https://github.com/shamvi-05)
 
 
 
-![Last commit Activity](https://img.shields.io/github/last-commit/clary09/Obliviate) ![commit activity](https://img.shields.io/github/commit-activity/m/clary09/Obliviate) ![Last modified](https://img.shields.io/aur/last-modified/flutter) ![Version](https://img.shields.io/aur/version/flutter)
+![Last commit Activity](https://img.shields.io/github/last-commit/clary09/Obliviate) 
