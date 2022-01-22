@@ -74,26 +74,6 @@ This is the Family Gallery in which the patient can store the pictures and names
 
 * A floating Action Button: This opens up a locations screen which contains the location of the house and various places. Tapping on the locations redirects to the corresponding location on the google map. This helps the Alzheimer patients to keep a track of the important locations so that they won't get lost. 
 
-   
-
-              
-             
-              
- 
-
-
-
-![2](https://user-images.githubusercontent.com/91636803/148434281-dff88bab-3cf9-4ca8-b7f8-3752c8f25ecb.png)
-
-
-
-
-
-
-
-
-
-
 
 ### UI/UX :
 
@@ -129,8 +109,13 @@ https://user-images.githubusercontent.com/91636803/148514454-ad33acf1-25a9-41e1-
 
 
 
+## APP DEMO 
 
-## [ App-Demonstration Link ](https://youtu.be/zKJ_SAC2948)
+
+   https://user-images.githubusercontent.com/78691639/150638603-6d010801-e469-4775-8930-5d2d83827368.mov
+
+
+### [ App-Demonstration Link - Click Here for more info](https://youtu.be/zKJ_SAC2948)
 
 
 
