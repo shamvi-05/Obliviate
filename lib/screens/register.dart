@@ -253,8 +253,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   void signUp(String email, String password) async{
     if(_formKey.currentState!.validate())
     {
+      //f valid, attempts to create a user in Firebase Authentication using createUserWithEmailAndPassword.
+      
         await _auth.createUserWithEmailAndPassword(email: email, password: password)
             .then((value)=>{
+              // On success, it calls postDetailsToFirestore() to save additional user details to Firestore.
               postDetailsToFirestore()
         }).catchError((e)
         {
@@ -272,13 +275,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     User? user = _auth.currentUser;
     UserModel userModel = UserModel();
 
-    //writing all the values
+    // Populates userModel fields with collected data
     userModel.email = user!.email;
     userModel.uid = user!.uid;
     userModel.firstName = firstNameEditingController.text;
     userModel.secondName = secondNameEditingController.text;
 
-
+    // saves or updates the current user’s data in Firestore’s users collection, using their unique UID as the document ID.
     await firebaseFirestore.collection("users").doc(user.uid).set(userModel.toMap());
     Fluttertoast.showToast(msg: "Account Created Succesfully :)");
     Navigator.pushAndRemoveUntil((context), MaterialPageRoute(builder: (context)=> HomeScreen()),
