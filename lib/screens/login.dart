@@ -11,12 +11,14 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  // A Form Key is an instance of GlobalKey<FormState>, which uniquely identifies the Form widget and allows you to interact with it.
   final _formKey = GlobalKey<FormState>();
   final TextEditingController emailController = new TextEditingController();
   final TextEditingController passwordController = new TextEditingController();
 
 
   //firebase
+  // Create an instance of FirebaseAuth that provides access to Firebase's authentication methods, like signInWithEmailAndPassword.
   final _auth = FirebaseAuth.instance;
 
   @override
@@ -90,8 +92,6 @@ class _LoginScreenState extends State<LoginScreen> {
               .size
               .width,
           onPressed: () { signIn(emailController.text, passwordController.text);
-            // Navigator.pushReplacement(
-            //     context, MaterialPageRoute(builder: (context) => HomeScreen()));
           },
           child: Text(
             "Login",
@@ -135,7 +135,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      // crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text("Dont have an account?"),
                         GestureDetector(
@@ -165,10 +164,14 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
 
-//login function
+ // Function to sign in the user using email and password
   void signIn(String email, String password) async {
+
+    // When calling _formKey.currentState.validate(), it will check the validation conditions of each field and return true only if all fields meet their criteria. 
     if (_formKey.currentState!.validate())
     {
+
+      // Use Firebase's signInWithEmailAndPassword method to authenticate the user , which will return the object having information about user and authentication status
       await  _auth.signInWithEmailAndPassword(email: email, password: password)
           .then((uid)=>{
             Fluttertoast.showToast(msg:"Login Succesful"),
